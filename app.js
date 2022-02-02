@@ -26,7 +26,7 @@ const getFilms = () => {
 			  var url = encodeURI('https://www.studioghibli.com.au/' 
 					+ title.toLowerCase());
 
-        var desc = movie.description.substring(0,300) + '.....';
+        var desc = movie.description.substring(0,160) + '.....';
 			  const p = document.createElement('p');
 			  p.textContent = desc;
 
