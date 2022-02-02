@@ -11,6 +11,22 @@ html {
   background: #f6f6f6;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f6f6f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #716844;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #58502c;
+}
+
 #root {
   max-width: 1200px;
   margin: 0 auto;
