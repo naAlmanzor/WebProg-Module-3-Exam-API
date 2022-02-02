@@ -23,20 +23,20 @@ const getFilms = () => {
         h2.textContent = movie.title;
 
         var title = movie.title.replace(/[^a-zA-Z]/g, "");
-			var url = encodeURI('https://www.studioghibli.com.au/' 
+			  var url = encodeURI('https://www.studioghibli.com.au/' 
 					+ title.toLowerCase());
 
        var desc = movie.description.substring(0,300) + '.....';
-			const p = document.createElement('p');
-			p.textContent = desc;
+			  const p = document.createElement('p');
+			  p.textContent = desc;
 
         p.textContent = `${movie.description}...`;
         const p2 = document.createElement("p");
         container.appendChild(card);
 
         const a = document.createElement('a');
-			a.setAttribute('href', url);
-			a.textContent = 'more';
+			  a.setAttribute('href', url);
+			  a.textContent = 'more';
 
         container.appendChild(card);
         card.appendChild(h2);
@@ -50,4 +50,4 @@ const getFilms = () => {
     });
 };
 
-fetchButton.addEventListener('click', getFilms);
+const fetchFilms = getFilms();
