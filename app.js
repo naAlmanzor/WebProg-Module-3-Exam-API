@@ -26,23 +26,23 @@ const getFilms = () => {
 			  var url = encodeURI('https://www.studioghibli.com.au/' 
 					+ title.toLowerCase());
 
-       var desc = movie.description.substring(0,300) + '.....';
+        var desc = movie.description.substring(0,300) + '.....';
 			  const p = document.createElement('p');
 			  p.textContent = desc;
 
-        p.textContent = `${movie.description}...`;
+        p.textContent = `${desc}...`;
         const p2 = document.createElement("p");
         container.appendChild(card);
 
         const a = document.createElement('a');
 			  a.setAttribute('href', url);
-			  a.textContent = 'more';
+			  a.textContent = 'Learn More';
 
         container.appendChild(card);
         card.appendChild(h2);
         card.appendChild(p);
         card.appendChild(p2);
-        p.appendChild(a);
+        card.appendChild(a);
       });
     })
     .catch((error) => {
